@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}QR Kod Oluşturucu | Araçlar{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>QR Kod Oluşturucu</h1>
+</div>
+
+<div class="tool-container">
+    <div class="tool-card">
+        <h2><i class="fas fa-qrcode"></i> QR Kod Oluştur</h2>
+        
+        <div class="form-group">
+            <label for="qr-data">Metin veya URL:</label>
+            <textarea 
+                id="qr-data" 
+                rows="3" 
+                placeholder="QR koda dönüştürmek istediğiniz metni veya URL'yi girin..."
+            ></textarea>
+        </div>
+        
+        <button class="btn btn-primary" onclick="generateQR()" style="width: 100%;">
+            <i class="fas fa-magic"></i> QR Kod Oluştur
+        </button>
+        
+        <div class="result-container" id="qr-result">
+            <!-- QR kod buraya gelecek -->
+        </div>
+    </div>
+</div>
+
+<section class="section" style="max-width: 800px; margin: 0 auto;">
+    <h2 class="section-title" style="font-size: 1.5rem;">Nasıl Kullanılır?</h2>
+    <div class="about-card">
+        <ol style="padding-left: 1.5rem; color: var(--text-secondary);">
+            <li style="margin-bottom: 0.5rem;">Yukarıdaki alana metin veya URL yazın</li>
+            <li style="margin-bottom: 0.5rem;">"QR Kod Oluştur" butonuna tıklayın</li>
+            <li style="margin-bottom: 0.5rem;">Oluşturulan QR kodu indirin veya kaydedin</li>
+            <li>QR kodu herhangi bir okuyucu ile tarayın</li>
+        </ol>
+    </div>
+</section>
+{% endblock %}

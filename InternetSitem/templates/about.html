@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+
+{% block title %}Hakkımda | Portfolyo{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Hakkımda</h1>
+</div>
+
+<div class="about-section">
+    <!-- Profil -->
+    <div class="about-card">
+        <h2>
+            <span class="icon"><i class="fas fa-user"></i></span>
+            Profil
+        </h2>
+        <p style="color: var(--text-secondary); line-height: 1.8;">
+            Çukurova Üniversitesi Bilgisayar Mühendisliği 4. sınıf öğrencisiyim. 
+            Yapay zeka, LLM'ler (RAG, LoRA, Multi-Agent), gömülü sistemler (Arduino, STM32) 
+            ve Python ile projeler geliştiriyorum. Takım çalışmasına yatkın, öğrenmeye açık 
+            ve kendimi sürekli geliştiren biriyim.
+        </p>
+    </div>
+
+    <!-- Eğitim -->
+    <div class="about-card">
+        <h2>
+            <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+            Eğitim
+        </h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Çukurova Üniversitesi</h3>
+                <span class="date">2021 - 2026 (Beklenen)</span>
+                <p>Bilgisayar Mühendisliği - GPA: 2.72/4.00</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Necmi Asfuroğlu Anadolu Lisesi</h3>
+                <span class="date">2017 - 2021</span>
+                <p>Lise Diploması</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sertifikalar -->
+    <div class="about-card">
+        <h2>
+            <span class="icon"><i class="fas fa-certificate"></i></span>
+            Sertifikalar
+        </h2>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <h4>AI and Cyber Security 101</h4>
+                <p>HSD Çukurova University</p>
+            </div>
+            <div class="cert-item">
+                <h4>Python Programming Zero to Advanced</h4>
+                <p>Udemy</p>
+            </div>
+            <div class="cert-item">
+                <h4>Savunma Sanayii Kampüsü</h4>
+                <p>T.C. Savunma Sanayii Başkanlığı</p>
+            </div>
+            <div class="cert-item">
+                <h4>STM32H7 ile Gömülü Yazılım Tasarımı</h4>
+                <p>Udemy</p>
+            </div>
+            <div class="cert-item">
+                <h4>Yeni Başlayanlar İçin Arduino İle Robotik Kodlama</h4>
+                <p>Udemy</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Staj Deneyimi -->
+    <div class="about-card">
+        <h2>
+            <span class="icon"><i class="fas fa-briefcase"></i></span>
+            Staj Deneyimi
+        </h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Gömülü Sistemler Stajı</h3>
+                <span class="date">2024</span>
+                <p>
+                    Arduino ve STM32 mikrodenetleyiciler ile gömülü yazılım geliştirme.
+                    Sensör entegrasyonu, motor kontrolü ve IoT uygulamaları üzerine çalışmalar.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Yetenekler -->
+    <div class="about-card">
+        <h2>
+            <span class="icon"><i class="fas fa-laptop-code"></i></span>
+            Yetenekler
+        </h2>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <h4>Python</h4>
+                <p>LLM, RAG, LoRA, Automation</p>
+            </div>
+            <div class="cert-item">
+                <h4>C & C++</h4>
+                <p>Gömülü Sistemler, Arduino</p>
+            </div>
+            <div class="cert-item">
+                <h4>Gömülü Sistemler</h4>
+                <p>Arduino, STM32</p>
+            </div>
+            <div class="cert-item">
+                <h4>Veritabanları</h4>
+                <p>SQL, SQLite</p>
+            </div>
+            <div class="cert-item">
+                <h4>Yapay Zeka</h4>
+                <p>RAG, LoRA, Multi-Agent</p>
+            </div>
+            <div class="cert-item">
+                <h4>Araçlar</h4>
+                <p>Git, VS Code</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Diller -->
+    <div class="about-card">
+        <h2>
+            <span class="icon"><i class="fas fa-language"></i></span>
+            Diller
+        </h2>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <h4>Türkçe</h4>
+                <p>Ana Dil</p>
+            </div>
+            <div class="cert-item">
+                <h4>İngilizce</h4>
+                <p>Akıcı (Fluent)</p>
+            </div>
+            <div class="cert-item">
+                <h4>Arapça</h4>
+                <p>Temel</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

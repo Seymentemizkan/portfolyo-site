@@ -1,0 +1,233 @@
+{% extends 'base.html' %}
+
+{% block title %}Projeler | Portfolyo{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Projelerim</h1>
+</div>
+
+<section class="section">
+    <div class="cards-grid">
+        <!-- ÖNCELİKLİ PROJELER: RAG, LoRA/FineTuning -->
+        
+        <!-- RAG Project -->
+        <div class="card">
+            <div class="card-icon gradient-1">
+                <i class="fas fa-brain"></i>
+            </div>
+            <h3>RAG Project</h3>
+            <p>Retrieval-Augmented Generation projesi. Belge tabanlı soru-cevap sistemi ile LLM'lerin bilgi erişimini geliştiren AI uygulaması.</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <span style="background: rgba(102, 126, 234, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Python</span>
+                <span style="background: rgba(102, 126, 234, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">LangChain</span>
+                <span style="background: rgba(102, 126, 234, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">AI/ML</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <a href="https://github.com/Seymentemizkan/RagProject" target="_blank" class="card-link">
+                    <i class="fab fa-github"></i> GitHub <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Fine Tuning / LoRA Project -->
+        <div class="card">
+            <div class="card-icon gradient-2">
+                <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Fine Tuning Project (LoRA)</h3>
+            <p>Large Language Model'lerin LoRA (Low-Rank Adaptation) yöntemi ile fine-tuning işlemi. Model özelleştirme ve eğitim optimizasyonu.</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <span style="background: rgba(240, 147, 251, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Python</span>
+                <span style="background: rgba(240, 147, 251, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">LoRA</span>
+                <span style="background: rgba(240, 147, 251, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Transformers</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <a href="https://github.com/Seymentemizkan/FineTuningProject" target="_blank" class="card-link">
+                    <i class="fab fa-github"></i> GitHub <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Multi-Agent Project -->
+        <div class="card">
+            <div class="card-icon gradient-3">
+                <i class="fas fa-users-cog"></i>
+            </div>
+            <h3>Multi-Agent Project</h3>
+            <p>Birden fazla AI ajanın koordineli çalıştığı multi-agent sistem. Otonom karar verme ve görev dağılımı.</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <span style="background: rgba(79, 172, 254, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Python</span>
+                <span style="background: rgba(79, 172, 254, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">AI Agents</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <a href="https://github.com/Seymentemizkan/Multi-AgentProject" target="_blank" class="card-link">
+                    <i class="fab fa-github"></i> GitHub <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Data Visualisation Project -->
+        <div class="card">
+            <div class="card-icon gradient-4">
+                <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3>Data Visualisation Project</h3>
+            <p>Veri görselleştirme ve analiz projesi. Matplotlib, Seaborn ve interaktif grafikler ile veri hikayesi anlatımı.</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <span style="background: rgba(67, 233, 123, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Python</span>
+                <span style="background: rgba(67, 233, 123, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Data Science</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <a href="https://github.com/Seymentemizkan/DataVisualisationProject" target="_blank" class="card-link">
+                    <i class="fab fa-github"></i> GitHub <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- ARDUINO/EMBEDDED PROJELER -->
+        
+        <!-- Car Multimedia Project -->
+        <div class="card">
+            <div class="card-icon gradient-5">
+                <i class="fas fa-car"></i>
+            </div>
+            <h3>Car Multimedia Project</h3>
+            <p>Araç multimedya sistemi projesi. Gömülü sistem programlama ve donanım entegrasyonu.</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <span style="background: rgba(250, 112, 154, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">C</span>
+                <span style="background: rgba(250, 112, 154, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Embedded</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <a href="https://github.com/Seymentemizkan/CarMultimediaProject" target="_blank" class="card-link">
+                    <i class="fab fa-github"></i> GitHub <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Auto Safety Stop System -->
+        <div class="card">
+            <div class="card-icon gradient-1">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Auto Safety Stop System</h3>
+            <p>Otomatik güvenlik durma sistemi. Sensör tabanlı tehlike algılama ve acil durum freni.</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <span style="background: rgba(102, 126, 234, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">C++</span>
+                <span style="background: rgba(102, 126, 234, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Arduino</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <a href="https://github.com/Seymentemizkan/Auto-Safety-Stop-System" target="_blank" class="card-link">
+                    <i class="fab fa-github"></i> GitHub <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Arduino Automatic Door -->
+        <div class="card">
+            <div class="card-icon gradient-2">
+                <i class="fas fa-door-open"></i>
+            </div>
+            <h3>Arduino Automatic Door</h3>
+            <p>Otomatik kapı sistemi projesi. Sensör ile hareket algılama ve servo motor kontrolü.</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <span style="background: rgba(240, 147, 251, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">C++</span>
+                <span style="background: rgba(240, 147, 251, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Arduino</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <a href="https://github.com/Seymentemizkan/arduino-automatic-door-project" target="_blank" class="card-link">
+                    <i class="fab fa-github"></i> GitHub <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Joystick Controlled Motor -->
+        <div class="card">
+            <div class="card-icon gradient-3">
+                <i class="fas fa-gamepad"></i>
+            </div>
+            <h3>Joystick Controlled Motor</h3>
+            <p>Joystick ile motor kontrolü. Analog giriş okuma ve PWM motor hız kontrolü.</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <span style="background: rgba(79, 172, 254, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">C++</span>
+                <span style="background: rgba(79, 172, 254, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Arduino</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <a href="https://github.com/Seymentemizkan/joystick-controlled-motor" target="_blank" class="card-link">
+                    <i class="fab fa-github"></i> GitHub <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Remote Controller -->
+        <div class="card">
+            <div class="card-icon gradient-4">
+                <i class="fas fa-satellite-dish"></i>
+            </div>
+            <h3>Remote Controller</h3>
+            <p>Kablosuz uzaktan kumanda projesi. RF modül ile iletişim ve kontrol sistemleri.</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <span style="background: rgba(67, 233, 123, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">C++</span>
+                <span style="background: rgba(67, 233, 123, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Arduino</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <a href="https://github.com/Seymentemizkan/remotecontroller" target="_blank" class="card-link">
+                    <i class="fab fa-github"></i> GitHub <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- WEB ARAÇLARI -->
+        
+        <!-- QR Generator -->
+        <div class="card">
+            <div class="card-icon gradient-5">
+                <i class="fas fa-qrcode"></i>
+            </div>
+            <h3>QR Generator</h3>
+            <p>Metin ve URL'lerden QR kod oluşturabilen araç. Bu sitede de kullanılıyor!</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <span style="background: rgba(250, 112, 154, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Python</span>
+                <span style="background: rgba(250, 112, 154, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">QRCode</span>
+            </div>
+            <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                <a href="https://github.com/Seymentemizkan/QRgenerator" target="_blank" class="card-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="/araclar/qr-generator" class="card-link">
+                    <i class="fas fa-play"></i> Demo
+                </a>
+            </div>
+        </div>
+
+        <!-- Password Generator -->
+        <div class="card">
+            <div class="card-icon gradient-1">
+                <i class="fas fa-key"></i>
+            </div>
+            <h3>Password Generator</h3>
+            <p>Güvenli ve özelleştirilebilir rastgele şifre oluşturma aracı. Bu sitede de kullanılıyor!</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <span style="background: rgba(102, 126, 234, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Python</span>
+                <span style="background: rgba(102, 126, 234, 0.3); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Security</span>
+            </div>
+            <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                <a href="https://github.com/Seymentemizkan/password-generator" target="_blank" class="card-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="/araclar/sifre-olusturucu" class="card-link">
+                    <i class="fas fa-play"></i> Demo
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GitHub Stats -->
+<section class="section" style="text-align: center;">
+    <h2 class="section-title">GitHub Profilim</h2>
+    <a href="https://github.com/Seymentemizkan" target="_blank" class="btn btn-primary">
+        <i class="fab fa-github"></i> GitHub'da Görüntüle
+    </a>
+</section>
+{% endblock %}

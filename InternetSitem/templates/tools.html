@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}Araçlar | Portfolyo{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Araçlar</h1>
+</div>
+
+<section class="section">
+    <div class="cards-grid">
+        <!-- QR Generator -->
+        <div class="card">
+            <div class="card-icon gradient-1">
+                <i class="fas fa-qrcode"></i>
+            </div>
+            <h3>QR Kod Oluşturucu</h3>
+            <p>Metin, URL veya herhangi bir veriyi QR koda dönüştürün. Oluşturulan QR kodu PNG formatında indirin.</p>
+            <a href="/araclar/qr-generator" class="card-link">
+                Aracı Aç <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <!-- Şifre Oluşturucu -->
+        <div class="card">
+            <div class="card-icon gradient-2">
+                <i class="fas fa-key"></i>
+            </div>
+            <h3>Şifre Oluşturucu</h3>
+            <p>Güvenli, rastgele şifreler oluşturun. Uzunluk ve karakter türlerini özelleştirin.</p>
+            <a href="/araclar/sifre-olusturucu" class="card-link">
+                Aracı Aç <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <!-- Gelecek araçlar için placeholder -->
+        <div class="card" style="opacity: 0.6;">
+            <div class="card-icon gradient-3">
+                <i class="fas fa-clock"></i>
+            </div>
+            <h3>Yakında...</h3>
+            <p>Yeni araçlar üzerinde çalışıyorum. Önerileriniz varsa iletişime geçin!</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
